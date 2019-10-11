@@ -1,0 +1,94 @@
+<!-- <input type="text" [(ngModel)]="name">
+<p>{{ name }}</p> -->
+
+<!-- <app-warning-alert></app-warning-alert>
+<app-success-alert></app-success-alert> -->
+
+<!-- <div class="container">
+    <div class="row">
+        <div class="col">
+                <ol> -->
+                        <!-- <li>Assignment 2 </li>
+                        <li>Add a Input field which updates a property ('userName') via two way bindings</li>
+                        <li>Output the username property via string interpolation (in a paragraph  below the input) </li>
+                        <li>Add a button which may only be clicked if the username is not a empty string. </li>
+                        <li>Upon clicking the button, the username should be reset to an empty string</li> 
+                    
+                        <label>UserName</label>
+                        <input type="text" class="form-control" [(ngModel)]="userName">
+                            <p> {{UserName}} </p>
+                            <button class="btn btn-primary" [disabled]="userName===''" (click) = "userName=''">Reset Now </button>
+                            -->
+
+                        <!-- <li>Assignment 3 </li>
+                        <li>Add a button that says 'Display details'  </li>
+                        <li>Add a peragraph with any content of your choice (secret password=Tuuna.) </li>
+                        <li>Toggle the displaying of that peragrapgh with the button created in the first step. </li>
+                        <li> Starting at the fifth log item,give all future log items  a blue background via (ng style) and white color (ng class)</li>
+                        <li>Log all button clicks in the array and output that array below the secret peragraph(may be log a timestamp   or simply inrementing numbeer</li>
+                        </ol>
+                        <hr> -->
+
+<!-- <button class="btn btn-primary" (click)="onToggleDetails()">Display Details</button>
+<p *ngIf="showSecret">  Secret Password=Tuna</p>
+<div *ngFor="let logItem of log; let  i=index" 
+                        [ngStyle]="{backgroundColor:i >=5 ? 'blue' :'transperent'}"
+                                 [ngClass]="{'white-text':i>=4}">{{ logItem}}</div>
+        </div>
+    </div> 
+</div> -->
+<app-header (featureSelected)="onNavigate($event)"></app-header>
+<div class="container">
+    <div class="row">
+        <div class col-md-12>
+            <router-outlet></router-outlet>   
+            <!-- <app-recipes *ngIf="loadedFeature ==='recipe'"></app-recipes>
+            <app-shopping-list *ngIf="loadedFeature !=='recipe'"></app-shopping-list> -->
+        </div>
+    </div>
+</div>
+
+
+<!-- <div class="container">
+    <div class="row">
+        <div class="col">
+                <ol> 
+                        <li>Assignment 4 </li>
+                        <li>Create three new component: 'Game Control' , odd and even  </li>
+                        <li>The game control component should have buttons start and stop to game</li>
+                        <li>when starting the game an event(holding a increment number) should get emmitted each second( ref= setInterval())</li>
+                        <li>The Event should be listenable from outside the component</li>
+                        <li>when stopping the game no more event should get emmited (clearInterval(ref))</li>
+                        <li>A new odd component should get created for every odd number emitted the same should happen for the Even number</li>
+                        <li>Simply output odd Numner or Even number intwo components</li>
+                        <li>style the element (eg peragraph) holding your output text differently in both component</li>
+                        </ol>
+                        <hr> 
+        </div>
+    </div> 
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <app-game-control (intervalFired)="onIntervalFired($event)"></app-game-control>
+    </div>
+
+</div>
+<div class="row">
+        <div class="col-xs-12">
+             <app-odd *ngFor="let oddNumber of oddNumbers" [number]="oddNumber"></app-odd> 
+            <app-even *ngFor="let evenNumber of evenNumbers" [number]="evenNumber"></app-even>
+        </div>
+    
+    </div> -->
+
+    <!--Assignment5  Optimize this app by adding a user service  which manages the active and inactive users 
+    Also add a counter service which counts the number of  active->Inactive and inactive->active actions.
+    -->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+                <app-active-users ></app-active-users>
+                <app-inactive-users ></app-inactive-users>
+            </div>
+        </div>
+    </div> -->
