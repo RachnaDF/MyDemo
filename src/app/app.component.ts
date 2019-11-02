@@ -32,13 +32,12 @@ export class AppComponent {
 //   console.log(firedNumber);
 // }
 
-loadedFeature='recipe';
-onNavigate(feature:string){
-  //console.log("onNavigate called");
-  //console.log("loadedFeature"+ this.loadedFeature);
-console.log("feature"+feature);
+ loadedFeature='recipe';
+ onNavigate(feature:string){
+//   //console.log("onNavigate called");
+//   //console.log("loadedFeature"+ this.loadedFeature);
+// console.log("feature"+feature);
 this.loadedFeature=feature;
-
 }
 
 
